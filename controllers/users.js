@@ -11,10 +11,10 @@ const getAll = async (req, res) => {
 
 const getSingle = async (req, res) => {
     const userId = new ObjectId(req.params.id);
-    const result = await mongodb.getDatabase().db().collection('project1').find({ _id: userId });
+    const result = await mongodb.getDatabase().db().collection('users').find({ _id: userId });
     result.toArray().then((users) => {
         res.setHeader('Content-Type', 'application/json');
-        res.status(200).json(users[0]);
+        res.status(200).json(users[0]); // returns only the first user in the array
     });
 };
 

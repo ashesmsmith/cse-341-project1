@@ -1,0 +1,13 @@
+// LOCALHOST
+### GET homepage
+GET http://localhost:3000/
+
+### GET all users
+GET http://localhost:3000/users
+
+### GET single user (Ashley)
+GET http://localhost:3000/users/67254b0fccf9cf00186ae401
+
+
+// PRODUCTION
+### GET all users
