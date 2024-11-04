@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "67254b0fccf9cf00186ae401"
+  },
+  "firstName": "Ashley",
+  "lastName": "Smith",
+  "email": "aSmith@email.com",
+  "favoriteColor": "Purple",
+  "birthday": "01/01/1989"
+},
+{
+  "_id": {
+    "$oid": "67254be2ccf9cf00186ae402"
+  },
+  "firstName": "Derek",
+  "lastName": "Smith",
+  "email": "dSmith@email.com",
+  "favoriteColor": "Green",
+  "birthday": "01/01/1986"
+},
+{
+  "_id": {
+    "$oid": "67254c07ccf9cf00186ae403"
+  },
+  "firstName": "Tyler",
+  "lastName": "Smith",
+  "email": "tSmith@email.com",
+  "favoriteColor": "Blue",
+  "birthday": "01/01/2014"
+},
+{
+  "_id": {
+    "$oid": "67254c36ccf9cf00186ae404"
+  },
+  "firstName": "Elizabeth",
+  "lastName": "Smith",
+  "email": "eSmith@email.com",
+  "favoriteColor": "Pink",
+  "birthday": "01/01/2018"
+}]

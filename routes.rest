@@ -1,13 +1,21 @@
 // LOCALHOST
 ### GET homepage
-GET http://localhost:3000/
+GET http://localhost:8080/
 
-### GET all users
-GET http://localhost:3000/users
+### GET all contacts
+GET http://localhost:8080/contacts
 
-### GET single user (Ashley)
-GET http://localhost:3000/users/67254b0fccf9cf00186ae401
+### GET single contact (Ashley)
+GET http://localhost:8080/contacts/67254b0fccf9cf00186ae401
+
 
 
 // PRODUCTION
-### GET all users
+### GET homepage
+GET https://cse-341-project1-uu52.onrender.com/
+
+### GET all contacts
+GET https://cse-341-project1-uu52.onrender.com/contacts
+
+### GET single contact
+GET https://cse-341-project1-uu52.onrender.com/contacts/67254b0fccf9cf00186ae401
