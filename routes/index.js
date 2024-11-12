@@ -1,11 +1,11 @@
 const router = require('express').Router();
 
-// Home Page
+// Home Page - http://localhost:8080/
 router.get('/', (req, res) => {
-    res.send('Hello World');
+    res.send('Welcome to Contacts!');
 });
 
-// Users Page
+// Contacts Page(s) - http://localhost:8080/contacts
 router.use('/contacts', require('./contacts'));
 
 module.exports = router;
