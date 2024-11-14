@@ -1,4 +1,7 @@
+//*************** 
 // LOCALHOST
+//***************
+
 ### GET homepage
 GET http://localhost:8080/
 
@@ -22,23 +25,27 @@ Content-Type: application/json
 
 
 ### PUT update existing contact
-PUT http://localhost:8080/contacts/67339237f0f26cc51c7adc00 HTTP/1.1
+### When testing add Delete Me contact above first then update id in URL below
+PUT http://localhost:8080/contacts/673637928f07b8d61b63a770 HTTP/1.1
 Content-Type: application/json
 
 {
-    "firstName": "Someone",
-    "lastName": "Smith",
-    "email": "sSmith@email.com",
-    "favoriteColor": "Gray",
-    "birthday": "01/01/2012"
+    "firstName": "Still Delete",
+    "lastName": "Me Please",
+    "email": "deleteMe@email.com",
+    "favoriteColor": "Blank",
+    "birthday": "01/01/2000"
 }
 
 ### DELETE delete single contact
 ### When testing add Delete Me contact above first then update id in URL below
-DELETE http://localhost:8080/contacts/6733930ff0f26cc51c7adc01 HTTP/1.1
+DELETE http://localhost:8080/contacts/673637928f07b8d61b63a770 HTTP/1.1
 
 
+//*************** 
 // PRODUCTION
+//***************
+
 ### GET homepage
 GET https://cse-341-project1-uu52.onrender.com/
 
@@ -49,7 +56,29 @@ GET https://cse-341-project1-uu52.onrender.com/contacts
 GET https://cse-341-project1-uu52.onrender.com/contacts/67254b0fccf9cf00186ae401
 
 ### POST add new contact
+POST https://cse-341-project1-uu52.onrender.com/contacts HTTP/1.1
+Content-Type: application/json
 
+{
+    "firstName": "Delete",
+    "lastName": "Me",
+    "email": "delete@email.com",
+    "favoriteColor": "Delete",
+    "birthday": "01/01/2012"
+}
 ### PUT update existing contact
+### When testing add Delete Me contact above first then update id in URL below
+PUT https://cse-341-project1-uu52.onrender.com/contacts/673637f757dc785eeaa09f92 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Still Delete",
+    "lastName": "Me Please",
+    "email": "deleteMe@email.com",
+    "favoriteColor": "Blank",
+    "birthday": "01/01/2000"
+}
 
 ### DELETE delete single contact
+### When testing add Delete Me contact above first then update id in URL below
+DELETE https://cse-341-project1-uu52.onrender.com/contacts/673637f757dc785eeaa09f92 HTTP/1.1
